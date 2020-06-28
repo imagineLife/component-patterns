@@ -1,0 +1,22 @@
+@import 'src/SASS/colors';
+
+.primary{
+	background-color: $prime;
+	color: white;
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid $prime;
+	cursor: pointer;
+
+	&:hover{
+		background-color: $prime-dark;
+		border: 1px solid $prime-dark;
+	};
+
+	&:active{
+		background-color: $prime-deep;
+		border: 1px solid $prime-deep;
+	};
+}

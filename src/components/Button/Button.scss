@@ -1,22 +1,87 @@
 @import 'src/SASS/colors';
 
-.primary{
-	background-color: $prime;
+button{
+
 	color: white;
-	width: 100px;
-	height: 25px;
 	text-align: center;
 	border-radius: 5px;
-	border: 1px solid $prime;
 	cursor: pointer;
+	font-size: 14px;
+	transition: all 300ms;
 
-	&:hover{
-		background-color: $prime-dark;
-		border: 1px solid $prime-dark;
+	&:focus{
+		outline: 0;
 	};
+	
+	/*
+		SIZES
+	*/
+	&.medium{
+		width: 100px;
+		height: 25px;
+	}
 
-	&:active{
-		background-color: $prime-deep;
-		border: 1px solid $prime-deep;
-	};
+	&.small{
+		width: 80px;
+		height: 20px;
+		font-size: 12px;
+	}
+
+	&.large{
+		width: 120px;
+		height: 30px;
+		font-size: 16px;
+	}
+
+
+	/*
+		COLORS 'types'
+	*/
+	&.primary{
+		background-color: $prime;
+		border: 1px solid $prime;
+
+		&:hover{
+			background-color: $prime-dark;
+			border: 1px solid $prime-dark;
+		};
+
+		&:active{
+			outline: none;
+			background-color: $prime-deep;
+			border: 1px solid $prime-deep;
+		};
+	}
+
+	&.warning{
+		background-color: $warn;
+		border: 1px solid $warn;
+
+		&:hover{
+			background-color: $warn-dark;
+			border: 1px solid $warn-dark;
+		};
+
+		&:active{
+			outline: none;
+			background-color: $warn-deep;
+			border: 1px solid $warn-deep;
+		};
+	}
+
+	&.danger{
+		background-color: $danger;
+		border: 1px solid $danger;
+
+		&:hover{
+			background-color: $danger-dark;
+			border: 1px solid $danger-dark;
+		};
+
+		&:active{
+			outline: none;
+			background-color: $danger-deep;
+			border: 1px solid $danger-deep;
+		};
+	}
 }

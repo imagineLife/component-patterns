@@ -60,8 +60,12 @@ Button.Large = (props) => <Button large {...props}/>
 Button.Danger = (props) => <Button danger {...props}/>
 Button.Warning = (props) => <Button warning {...props}/>
 
+export default Button;
 
-//2-layers
+
+
+/*
+	//2-layers
 //type-first
 Button.Warning.Small = (props) => <Button.Small warning {...props} />
 Button.Danger.Small = (props) => <Button.Small danger {...props} />
@@ -74,4 +78,4 @@ Button.Small.Danger = (props) => <Button.Small danger {...props} />
 Button.Large.Warning = (props) => <Button.Large warning {...props} />
 Button.Large.Danger = (props) => <Button.Large danger {...props} />
 
-export default Button;
+*/
